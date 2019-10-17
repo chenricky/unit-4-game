@@ -15,11 +15,12 @@ var computerScoreNew = randomComputerScore();
 //console.log("random computer score from a func is " + randomComputerScore());
 console.log("computer score should not change in the same iteration: " + computerScoreNew);
 
-var lossStatus = false;
+//var lossStatus = false;
 
-if (lossStatus = true) {
+if (totalScore > computerScoreNew) {
     //var computerScore = Math.floor(Math.random()*410);
-    randomComputerScore();
+    totalScore = 0;
+    computerScoreNew = randomComputerScore();
 }
 
 $("#blueGemImg").on("click", function() {
@@ -33,12 +34,14 @@ $("#blueGemImg").on("click", function() {
     
     if (totalScore < computerScoreNew) {
         $("#winCount").html("winCount is: " + winCount++);
-        console.log(lossStatus + " from blue gem If block");
+       // console.log("lossStatus is " + lossStatus + " from blue gem If block");
     }
     else {
         $("#lossCount").html("lossCount is: " + lossCount++);
-        lossStatus = true;
-        console.log(lossStatus + " from blue gem ELSE block");
+        //lossStatus = true;
+        //console.log(lossStatus + " from blue gem ELSE block");
+        totalScore = 0;
+        computerScoreNew = randomComputerScore();
        
     }
 
@@ -56,12 +59,14 @@ $("#pinkGemImg").on("click", function() {
     
     if (totalScore < computerScoreNew) {
         $("#winCount").html("winCount is: " + winCount++);
-        console.log(lossStatus + " from pink gem If block");
+        //console.log("lossStatus is " + lossStatus + " from pink gem If block");
     }
     else {
         $("#lossCount").html("lossCount is: " + lossCount++);
-        lossStatus = true;
-        console.log(lossStatus + " from pink gem ELSE block");
+        //lossStatus = true;
+        //console.log(lossStatus + " from pink gem ELSE block");
+        totalScore = 0;
+        computerScoreNew = randomComputerScore();
        
     }
 
@@ -79,12 +84,14 @@ $("#purpleGemImg").on("click", function() {
     
     if (totalScore < computerScoreNew) {
         $("#winCount").html("winCount is: " + winCount++);
-        console.log(lossStatus + " from purple gem If block");
+        //console.log("lossStatus is " + lossStatus + " from purple gem If block");
     }
     else {
         $("#lossCount").html("lossCount is: " + lossCount++);
-        lossStatus = true;
-        console.log(lossStatus + " from ppourple gem ELSE block");
+        //lossStatus = true;
+        //console.log(lossStatus + " from ppourple gem ELSE block");
+        totalScore = 0;
+        computerScoreNew = randomComputerScore();
       
     }
 
@@ -102,12 +109,14 @@ $("#threeGemImg").on("click", function() {
     
     if (totalScore < computerScoreNew) {
         $("#winCount").html("winCount is: " + winCount++);
-        console.log(lossStatus + " from three gem If block");
+        //console.log("lossStatus is " + lossStatus + " from three gem If block");
     }
     else {
         $("#lossCount").html("lossCount is: " + lossCount++);
-        lossStatus = true;
-        console.log(lossStatus + " from three gem ELSE block");
+        //lossStatus = true;
+        //console.log(lossStatus + " from three gem ELSE block");
+        totalScore = 0;
+        computerScoreNew = randomComputerScore();
     
     }
 
