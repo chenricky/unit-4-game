@@ -34,11 +34,11 @@ $(document).ready(function () {
         console.log("computer score should not change in the same iteration: " + computerScoreNew);
         
         if (totalScore < computerScoreNew) {
-            $("#winCount").html("winCount is: " + winCount++);
+            $("#winCount").html("win Count is: " + winCount++);
            // console.log("lossStatus is " + lossStatus + " from blue gem If block");
         }
         else {
-            $("#lossCount").html("lossCount is: " + lossCount++);
+            $("#lossCount").html("loss Count is: " + lossCount++);
             //lossStatus = true;
             //console.log(lossStatus + " from blue gem ELSE block");
             totalScore = 0;
